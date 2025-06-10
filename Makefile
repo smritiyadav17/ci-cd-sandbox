@@ -11,6 +11,7 @@ lint:
 	pylint --disable=R,C *.py mylib/*.py
 test:
 	# pytest
+	python -m pytest -vv --cov=mylib test_code.py
 deploy:
 	# deploy
 all : install lint test deploy
